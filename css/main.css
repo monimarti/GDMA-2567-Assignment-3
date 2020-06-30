@@ -40,8 +40,26 @@
 /*--------------------------------------------------------------
 3.0 - Generic 
 -------------------------------------------------------------- */
+*{
+	font-family: 'Work Sans', sans-serif;
+}
 
+*:focus  {
+    outline: 0;
+}
 
+@media screen and (min-width: 768px){
+	html{
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	html{
+		font-size: 1.1rem;
+	}
+}
 
 /*--------------------------------------------------------------
 4.0 - Elements 
@@ -51,6 +69,25 @@
 
 
 /*  HEADLINES  */
+
+h1, h2, h3 {
+	font-family: 'Tinos', serif;
+	font-variant: small-caps;
+}
+
+#bg-quote {
+	background-image: url("../img/coffee-beans-bag.jpg");
+	text-align:center;
+	width: 100%;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#bg-quote div {
+	padding: 150px 100px;
+}
 
 /*  NAVIGATION  */
 
@@ -74,7 +111,9 @@
  
 /*  TYPOGRAPHY  */ /*-- FONT SIZE LINE HEIGHT WEIGHT COLOR --*/
 
-
+* {
+	color: #4A4D50;
+}
 
 
 /*  LAYOUT  */ /*-- MARGIN PADDING --*/
@@ -83,7 +122,23 @@
 
 /*  NAVIGAION  */
 
+body>header {
+	background-color: #445B60;
+}
 
+nav {
+	margin-top: 50px;	
+}
+
+nav li {
+	display: inline-block;
+	float: right;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+}
 
 /*  FOOTER  */
 
