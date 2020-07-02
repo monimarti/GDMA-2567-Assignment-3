@@ -89,6 +89,23 @@ h1, h2, h3 {
 	padding: 150px 100px;
 }
 
+#about {
+	padding: 100px 0;
+	margin: 0 auto;
+	float: none;
+	
+	
+}
+
+span {
+	text-align: center;
+	font-family: 'Tinos', serif;
+	font-variant: small-caps;
+	font-size: 2.5em;
+	line-height: 1em;
+	
+}
+
 /*  NAVIGATION  */
 
 
@@ -100,9 +117,14 @@ h1, h2, h3 {
 5.0 - Objects - OVER RIDING FRAMEWORK  
 -------------------------------------------------------------- */
 
+#process {
+	margin-top: 500px;
+}
 
-
-
+#center-align  {
+	text-align: center;
+	margin-left: 200px;
+}
 
 
 /*--------------------------------------------------------------
@@ -122,17 +144,19 @@ h1, h2, h3 {
 
 /*  NAVIGAION  */
 
-body>header {
+.bg-color {
 	background-color: #445B60;
 }
 
 nav {
-	margin-top: 50px;	
+	margin-top: 50px;
+	text-align: right;
 }
 
 nav li {
 	display: inline-block;
-	float: right;
+	margin-right: 15px;
+	
 }
 
 nav li a {
