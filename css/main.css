@@ -75,29 +75,9 @@ h1, h2, h3 {
 	font-variant: small-caps;
 }
 
-#bg-quote {
-	background-image: url("../img/coffee-beans-bag.jpg");
-	text-align:center;
-	width: 100%;
-	padding: 0;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
 
-#bg-quote div {
-	padding: 150px 100px;
-}
 
-#about {
-	padding: 100px 0;
-	margin: 0 auto;
-	float: none;
-	
-	
-}
-
-span {
+span, h2 {
 	text-align: center;
 	font-family: 'Tinos', serif;
 	font-variant: small-caps;
@@ -117,14 +97,6 @@ span {
 5.0 - Objects - OVER RIDING FRAMEWORK  
 -------------------------------------------------------------- */
 
-#process {
-	margin-top: 500px;
-}
-
-#center-align  {
-	text-align: center;
-	margin-left: 200px;
-}
 
 
 /*--------------------------------------------------------------
@@ -141,6 +113,136 @@ span {
 /*  LAYOUT  */ /*-- MARGIN PADDING --*/
 
 
+@media screen and (min-width: 1024px){
+	nav {
+		margin-top: 50px;
+		text-align: right;
+		float: right;
+	}
+	
+	
+}
+
+#process {
+	
+	text-align: center;
+	margin-top: 100px;
+}
+
+#bg-quote {
+	background-image: url("../img/coffee-beans-bag.jpg");
+	text-align:center;
+	width: 100%;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#blends-quote {
+	background-image: url("../img/coffee-jar.jpg");
+	text-align:center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+#bg-quote div {
+	padding: 90px 20px;
+}
+
+#bg-quote p, #blends-quote blockquote, blockquote>footer a{
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 1em;
+	
+}
+
+
+#about, #forms, #selection section {
+	padding: 100px 0;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+#about p:last-child {
+	margin-top: 50px;
+}
+
+#selection h3 {
+	font-size: 2rem;
+}
+
+.italic-caps {
+	font-family: 'Tinos', serif;
+	font-style: italic;
+	font-variant: small-caps;
+	font-size: 1.25rem;
+}
+
+#finch-blend {
+	background-color: #445B60;
+	
+}
+
+#finch-blend p, #finch-blend h3 {
+	color: #fff;
+}
+
+#finch-blend p:last-child {
+	background-color: #fff;
+	color: #445B60;
+	font-size: 1.5rem;
+	padding:10px;
+}
+
+
+
+#forms .blk-btn, #finch-blend .blk-btn{
+	background-color: #445B60;
+	border: solid #fff;
+}
+
+#forms .blk-btn:hover, #finch-blend .blk-btn:hover {
+	background-color: #fff;
+	color: #445B60;
+}
+#forms span {
+	color: #fff;
+}
+
+
+/*  BUTTON  */
+
+.blk-btn {
+	font-family: 'Tinos', serif;
+	font-variant: small-caps;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff !important;
+  background-color: #000;
+  box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
+    0 11px 21px 0 rgba(255, 166, 220, 0.004);
+}
+
+
+
+.blk-btn:hover {
+	background-color: #fff;
+	color: #000 !important;;
+	border: solid #000;
+	
+}
 
 /*  NAVIGAION  */
 
@@ -149,8 +251,7 @@ span {
 }
 
 nav {
-	margin-top: 50px;
-	text-align: right;
+	text-align: center;
 }
 
 nav li {
@@ -162,11 +263,51 @@ nav li {
 nav li a {
 	color: #fff;
 	text-decoration: none;
+	font-variant: small-caps;
+	
+}
+
+nav li a:hover {
+	background-color: #fff;
+	padding: 5px 10px;
+	color: #445B60;
 }
 
 /*  FOOTER  */
 
+body>footer {
+	background-color: #445B60;
+}
 
+footer nav{
+	padding: 0;
+	margin: 0;
+	
+}
+
+#btm-logo {
+	margin: 0 auto;
+	float: none;
+	
+}
+
+footer li {
+	display: inline-block;
+}
+
+i span {
+	display: none;
+}
+
+i {
+	padding: 20px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+footer i:hover {
+	color: #000;
+}
 /*--------------------------------------------------------------
 7.0 - Utilities -- CLASS SELECTOR THAT DOES 1 THING APPLIED TO ANY ELEMENT INSTEAD OF GROUPING THINGS --
 -------------------------------------------------------------- */
